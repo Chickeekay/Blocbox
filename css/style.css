@@ -8,6 +8,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Valera Round", Helvetica, Arial, sans-serif;
 }
+<head>
+  <link rel="stylesheet" href="animate.min.css">
+  <h1 class="animated infinite bounce">Example</h1>
+</head>
 h2 {
   font-size: 28px
   font-weight: normal;
