@@ -128,29 +128,30 @@ p {
     margin:3em auto 0;
   }
   /* BUTTONS */
-   .btn {
-     border-radius: 4px;
-     color:#000000;
-     font-weight: 700;
-     text-decoration: none;
-     padding:10px 30px;
-     background: #FFEB3B;
-     border: 2px solid #FFEB3B;
-     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-   }
+  .btn {
+   border-radius: 4px;
+   color:#000000;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #FFEB3B;
+   border: 2px solid #FFEB3B;
+   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  }
 
   /* BENEFITS */
   .benefits {
+    padding:4em 0;
     text-align: center;
     display:block;
     position:relative;
+    list-style: none;
   }
   .benefits ul {
     margin: 0 auto;
     padding:4em 0;
   }
-  .benefits ul > li {
-    list-style: none;
+  .benefits ul li {
     display: inline-block;
     margin:0 15px;
   }
@@ -163,39 +164,41 @@ p {
   .benefits h2 {
     color:#4CAF50;
   }
+  .benefits p{
+    color:#000000;
+  }
 
   /* PRICING */
-   .pricing {
-     background: #004D40 url("../images/pricing_photo.png") top center no-repeat;
-     background: url("../images/pricing_photo.png") top center no-repeat,
-     linear-gradient(206deg, #009688 0%, #004D40 100%);
-     background-size:cover;
+  .pricing {
+     background: #004D40 url("../images/pricing_photo.png");
+     background: url("../images/pricing_photo.png") top center no-repeat linear-gradient(206deg, #009688 0%, #004D40 100%);
+     background-size: cover;
      text-align: center;
-     padding:4em 0;
-   }
-   .pricing h2, .pricing p {
+     padding: 4em 0;
+  }
+  .pricing h2, .pricing p {
      color:#FFFFFF;
-   }
-   .pricing ul {
+  }
+  .pricing ul {
      margin:0 auto;
      padding:2em 0;
-   }
-   .pricing ul li {
-     list-style-type: none;
-   }
-   .box {
+  }
+  .pricing ul li {
+     list-style: none;
+  }
+  .box {
       padding:0 15px 15px;
       background: #FFFFFF;
       box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
       min-height: 439px;
       position: relative;
       margin-top: 25px;
-    }
-    .box.middle {
+  }
+  .box .middle {
       min-height: 485px;
       margin-top:0px;
-    }
-    .box h3 {
+  }
+  .box h3 {
       font-family: "Lato", Helvetica, Arial, sans-serif;
       font-weight: 600;
       text-transform: uppercase;
@@ -207,49 +210,52 @@ p {
       text-align: center;
       margin:0 -15px 40px;
       padding:10px 0;
-    }
-    .box h4 {
-  font-size:50px;
-  font-weight: normal;
-  margin:40px 0 10px;
-  color:#3498DB;
-}
-.box h4 span {
-  font-size:32px;
-  vertical-align: top;
-}
-.box h4 span.month {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  color:#888888;
-  font-size:20px;
-  vertical-align: middle;
-}
-.box ul li {
-  font-size:18px;
-  margin-bottom:20px;
-  font-weight: 100;
-}
-.box .btn {
-   position:absolute;
-   bottom:20px;
-   left:20px;
-   right:20px;
- }
- .small {
-   font-size: 12px;
-   color: #FEFEFE;
-   line-height: 15px;
-   font-style:italic;
- }
+  }
+  .box h4 {
+      font-size:50px;
+      font-weight: normal;
+      margin:40px 0 10px;
+      color:#3498DB;
+  }
+  .box h4 span {
+      font-size:32px;
+      vertical-align: top;
+  }
+  .box h4 span.month {
+      font-family: "Lato", Helvetica, Arial, sans-serif;
+      font-weight: 100;
+      color:#888888;
+      font-size:20px;
+      vertical-align: middle;
+  }
+  .box ul li {
+      font-size:18px;
+      margin-bottom:20px;
+      font-weight: 100;
+  }
+  .box .btn {
+     position:absolute;
+     bottom:20px;
+     left:20px;
+     right:20px;
+  }
+  .small {
+     font-size: 12px;
+     color: #FEFEFE;
+     line-height: 15px;
+     font-style:italic;
+  }
 
- /* TESTIMONIALS */
+  /* TESTIMONIALS */
   .testimonials {
     padding:4em 0;
     text-align: center;
   }
   .testimonials h2 {
     color:#4CAF50;
+  }
+  .testimonials p {
+    color: #4CAF50;
   }
   .testimonials ul li {
     list-style-type: none;
@@ -291,4 +297,5 @@ p {
     text-align: left;
     font-size:13px;
     margin-top: 30px;
+    color: #000000
   }
