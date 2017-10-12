@@ -140,6 +140,10 @@ p {
   }
 
   /* BENEFITS */
+  .element style {
+    float: left;
+    background-color: #FFFFFF;
+  }
   .benefits {
     padding:4em 0;
     text-align: center;
@@ -170,7 +174,7 @@ p {
 
   /* PRICING */
   .pricing {
-     background: #004D40 url("../images/pricing_photo.png");
+     background: #004D40 url("../images/pricing_photo.png"); top center no-repeat;
      background: url("../images/pricing_photo.png") top center no-repeat linear-gradient(206deg, #009688 0%, #004D40 100%);
      background-size: cover;
      text-align: center;
@@ -194,7 +198,7 @@ p {
       position: relative;
       margin-top: 25px;
   }
-  .box .middle {
+  .box.middle {
       min-height: 485px;
       margin-top:0px;
   }
