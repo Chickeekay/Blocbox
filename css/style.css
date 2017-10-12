@@ -9,13 +9,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Valera Round", Helvetica, Arial, sans-serif;
 }
 h2 {
-  font-size: 28px
+  font-size: 28px;
   font-weight: normal;
   margin-bottom: 5px;
 }
 p {
   font-size: 16px;
-  line-height: -height: 19px
+  line-height: 19px;
   font-weight: 100;
 }
 
@@ -88,7 +88,7 @@ p {
     margin:0;
   }
   header nav ul > li {
-    list-style-type: : none;
+    list-style-type: none;
     display: inline-block;
     margin:0 15px;
   }
@@ -174,7 +174,7 @@ p {
 
   /* PRICING */
   .pricing {
-     background: #004D40 url("../images/pricing_photo.png"); top center no-repeat;
+     background: #004D40 url("../images/pricing_photo.png") top center no-repeat;
      background: url("../images/pricing_photo.png") top center no-repeat linear-gradient(206deg, #009688 0%, #004D40 100%);
      background-size: cover;
      text-align: center;
@@ -219,7 +219,7 @@ p {
       font-size:50px;
       font-weight: normal;
       margin:40px 0 10px;
-      color:#3498DB;
+      color:#4CAF50;
   }
   .box h4 span {
       font-size:32px;
@@ -268,7 +268,7 @@ p {
     color:#FFFFFF;
     text-align: left;
     font-style: italic;
-    background:#34495E;
+    background:#009688;
     position: relative;
     padding:30px;
     width:auto;
@@ -283,7 +283,7 @@ p {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-top-color: #34495E;
+    border-top-color: #009688;
     border-width: 10px;
     margin-left: -10px;
   }
@@ -303,3 +303,54 @@ p {
     margin-top: 30px;
     color: #000000
   }
+  /* FOOTER */
+   footer {
+     background-color: #004D40;
+     background-image: linear-gradient(to top,
+        #009688 0%, #009688 50%, #004D40 50%, #004D40 100%);
+     color: #FFFFFF;
+     height: 150px;
+     position: relative;
+     overflow: hidden;
+     z-index: 0;
+   }
+   footer p, footer nav ul {
+     font-size:14px;
+     font-weight:100;
+     text-align: center;
+     margin: 10px auto 0;
+   }
+   footer nav ul li {
+     list-style-type: none;
+     display: inline;
+   }
+   footer nav ul li a {
+     color:#FFFFFF;
+     text-decoration: none;
+   }
+   footer .right-footer-block {
+     background-color: transparent;
+   }
+   footer .logo{
+     padding: 2.35em 0;
+     margin: 0 auto;
+     display: block;
+   }
+   @media (min-width: 992px) {
+      footer{
+        background-color: #009688;
+        background-image: linear-gradient(to left,
+           #009688 0%, #009688 33.33337%, #004D40 33.33337%, #004D40 100%);
+        height: 100px;
+      }
+      footer p, footer nav ul {
+        padding: 2em 0;
+        text-align: left;
+      }
+      footer .right-footer-block {
+        background-color: #009688;
+      }
+      footer .logo {
+        padding: 2em 0 2em 1.5em;
+      }
+    }
