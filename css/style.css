@@ -41,6 +41,7 @@ p {
   position:relative;
   min-height: 1px;
   margin:0 2% 20px;
+
  }
 
  /*MOBILE FIRST*/
@@ -168,6 +169,41 @@ p {
   .benefits p{
     color:#000000;
   }
+
+/*TRIAL
+  /* BENEFITS */
+  .element style {
+    float: left;
+    background-color: #FFFFFF;
+  }
+  .benefits {
+    padding:4em 0;
+    text-align: center;
+    display:block;
+    position:relative;
+    list-style: none;
+  }
+  .benefits ul {
+    margin: 0 auto;
+    padding:4em 0;
+  }
+  .benefits ul li {
+    display: inline-block;
+    margin:0 15px;
+  }
+  .benefits i {
+    color:#4CAF50;
+    font-size:60px;
+    margin:0;
+    vertical-align: middle;
+  }
+  .benefits h2 {
+    color:#4CAF50;
+  }
+  .benefits p{
+    color:#000000;
+  }
+
 
   /* PRICING */
   .pricing {
@@ -380,11 +416,6 @@ p {
     }
 
     /*ORIGINAL MEDIA QUERIES FOUND UNDER THE GRID SECTION*/
-    @media (min-width: 768px) {
-      .container {
-        width: 750px;
-      }
-    }
     @media (min-width: 992px) {
       .container {
         width: 970px;
