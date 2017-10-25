@@ -282,7 +282,7 @@ p {
 
   /* TESTIMONIALS */
   .testimonials {
-    padding: 2.5em 0 0;
+    padding: 2.5em 0;
     text-align: center;
   }
   .testimonials h2 {
@@ -374,10 +374,9 @@ p {
   /* FOOTER */
    footer {
      background-color: #004D40;
-     background-image: linear-gradient(to top,
-        #009688 0%, #009688 50%, #004D40 50%, #004D40 100%);
+     background-image: linear-gradient(to top, #009688 0%, #009688 20%, #004D40 80%, #004D40 100%);
      color: #FFFFFF;
-     height: 150px;
+     height: 250px;
      position: relative;
      overflow: hidden;
      z-index: 0;
@@ -386,7 +385,8 @@ p {
      font-size:14px;
      font-weight:100;
      text-align: center;
-     margin: 0px auto 0; /*PREFERRED 0PX VS 10PX*/
+     margin: 10px auto 10; /*PREFERRED 0PX VS 10PX*/
+     padding: 0;
    }
    footer nav ul li {
      list-style-type: none;
