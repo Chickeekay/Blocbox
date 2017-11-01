@@ -612,10 +612,19 @@ p {
        width:16px;
        text-align: center;
        margin-right:8px;
-     }
+    }
+    .left-nav .items ul li.active a {
+      background:#004D40;
+    }
+/* WHITE BACKGROUND
      .left-nav .items ul li.active a {
-       background:#004D40;
+       background:#FFFFFF;
+       color: #004D40
      }
+*/
+
+
+
 /*
      .left-nav ul > li .fa-th-large {
         background:#004D40;
