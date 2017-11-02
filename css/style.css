@@ -37,9 +37,9 @@ p {
  }
 
  /*MOBILE FIRST*/
- /*USED EM VS PX FOR TEXT SIZE*/
- /*ENLARGED LOGO,NAV AND PARAGRAPH TEXT AND LINE HEIGHT*/
- /*WAS HOPING TO HAVE DIFFERENT SIZES OF TEXT AND SPACING FOR MOBILE AND DESKTOP BUT WASN'T ABLE TO ACHIEVE IT. MOBILE FIRST SETTINGS REMAINED ENFORCED DESPITE MOVING THE DESKTOP MEDIA QUERIES AT THE BOTTOM OF THE PAGE. */
+             /*USED EM VS PX FOR TEXT SIZE*/
+             /*ENLARGED LOGO,NAV AND PARAGRAPH TEXT AND LINE HEIGHT*/
+             /*WAS HOPING TO HAVE DIFFERENT SIZES OF TEXT AND SPACING FOR MOBILE AND DESKTOP BUT WASN'T ABLE TO ACHIEVE IT. MOBILE FIRST SETTINGS REMAINED ENFORCED DESPITE MOVING THE DESKTOP MEDIA QUERIES AT THE BOTTOM OF THE PAGE. */
  @media (min-width: 320px) {
  }
  .logo-header {
@@ -163,39 +163,39 @@ p {
     margin: 0 15px 20px;
   }
 
-/*TRIAL BENEFITS
-  .element style {
-    float: left;
-    background-color: #FFFFFF;
-  }
-  .benefits {
-    padding:4em 0;
-    text-align: center;
-    display:block;
-    position:relative;
-    list-style: none;
-  }
-  .benefits ul {
-    margin: 0 auto;
-    padding:4em 0;
-  }
-  .benefits ul li {
-    display: inline-block;
-    margin:0 15px;
-  }
-  .benefits i {
-    color:#4CAF50;
-    font-size:60px;
-    margin:0;
-    vertical-align: middle;
-  }
-  .benefits h2 {
-    color:#4CAF50;
-  }
-  .benefits p{
-    color:#000000;
-    padding-right: 15px;
-  }*/
+              /*TRIAL BENEFITS
+                .element style {
+                  float: left;
+                  background-color: #FFFFFF;
+                }
+                .benefits {
+                  padding:4em 0;
+                  text-align: center;
+                  display:block;
+                  position:relative;
+                  list-style: none;
+                }
+                .benefits ul {
+                  margin: 0 auto;
+                  padding:4em 0;
+                }
+                .benefits ul li {
+                  display: inline-block;
+                  margin:0 15px;
+                }
+                .benefits i {
+                  color:#4CAF50;
+                  font-size:60px;
+                  margin:0;
+                  vertical-align: middle;
+                }
+                .benefits h2 {
+                  color:#4CAF50;
+                }
+                .benefits p{
+                  color:#000000;
+                  padding-right: 15px;
+                }*/
 
   /* PRICING */
   .pricing {
@@ -405,25 +405,25 @@ p {
      display: block;
    }
 
-   /*TRIAL MEDIA QUERY FOOTER
-   @media (min-width: 320px) {
-      footer{
-        background-color: #009688;
-        background-image: linear-gradient(to left,
-           #009688 0%, #009688 33.33337%, #004D40 33.33337%, #004D40 100%);
-        height: 100px;
-      }
-      footer p, footer nav ul {
-        padding: 2em 0;
-        text-align: left;
-      }
-      footer .right-footer-block {
-        background-color: #009688;
-      }
-      footer .logo {
-        padding: 2em 0 2em 1.5em;
-      }
-    }
+             /*TRIAL MEDIA QUERY FOOTER
+             @media (min-width: 320px) {
+                footer{
+                  background-color: #009688;
+                  background-image: linear-gradient(to left,
+                     #009688 0%, #009688 33.33337%, #004D40 33.33337%, #004D40 100%);
+                  height: 100px;
+                }
+                footer p, footer nav ul {
+                  padding: 2em 0;
+                  text-align: left;
+                }
+                footer .right-footer-block {
+                  background-color: #009688;
+                }
+                footer .logo {
+                  padding: 2em 0 2em 1.5em;
+                }
+              }
 
     /*MEDIA QUERIES*/
     @media (min-width: 768px) {
@@ -616,58 +616,58 @@ p {
     .left-nav .items ul li.active a {
       background:#004D40;
     }
-/* WHITE BACKGROUND
-     .left-nav .items ul li.active a {
-       background:#FFFFFF;
-       color: #004D40
-     }
-*/
+              /* WHITE BACKGROUND
+                   .left-nav .items ul li.active a {
+                     background:#FFFFFF;
+                     color: #004D40
+                   }
+              */
 
 
 
-/*
-     .left-nav ul > li .fa-th-large {
-        background:#004D40;
-        padding: 10px 0px 10px 50px;
-        width: 100% ;
-        float: right;
-     }
-*/
+              /*
+                   .left-nav ul > li .fa-th-large {
+                      background:#004D40;
+                      padding: 10px 0px 10px 50px;
+                      width: 100% ;
+                      float: right;
+                   }
+              */
 
-/*
-     /*
-       margin-right: 0px;
-       border-right: 0px;
-       display: block;
-     */
+              /*
+                   /*
+                     margin-right: 0px;
+                     border-right: 0px;
+                     display: block;
+                   */
 
-     /* background color 1st attempt
-     It highlighted ITEMS, BOXES and JOEY KIRK instead of ALL ITEMS.
-     It was also not flush right.
+                   /* background color 1st attempt
+                   It highlighted ITEMS, BOXES and JOEY KIRK instead of ALL ITEMS.
+                   It was also not flush right.
 
 
-     .left-nav p {
-     background:#004D40;
-     padding: 10px 10px 10px 10px;
-     width: 100% ;
-     float: right;
-     text-align: inherit;
+                   .left-nav p {
+                   background:#004D40;
+                   padding: 10px 10px 10px 10px;
+                   width: 100% ;
+                   float: right;
+                   text-align: inherit;
 
-     .dashboard.html
-      li a i
-    }*/
+                   .dashboard.html
+                    li a i
+                  }*/
 
-/*
-     .left-nav ul > li {
-       background:#004D40;
-       padding: 10px 0px 10px 50px;
-       width: 100% ;
-       float: right;
-       margin-bottom: 0px;
-       display: inline;
-       position: relative;
-     }
-     */
+              /*
+                   .left-nav ul > li {
+                     background:#004D40;
+                     padding: 10px 0px 10px 50px;
+                     width: 100% ;
+                     float: right;
+                     margin-bottom: 0px;
+                     display: inline;
+                     position: relative;
+                   }
+                   */
 
 
      /* LEFT NAVBAR SETTINGS */
@@ -746,14 +746,14 @@ p {
     width: 100%;
   }
 
-/*
-.item-box :hover {
-    background:#004D40;
-    padding: 10px 0px 10px 50px;
-    width: 100% ;
-    float: right;
- }
- */
+              /*
+              .item-box :hover {
+                  background:#004D40;
+                  padding: 10px 0px 10px 50px;
+                  width: 100% ;
+                  float: right;
+               }
+               */
 
  /* Larger Mobile Devices */
  @media (min-width:460px) {
