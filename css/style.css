@@ -769,7 +769,12 @@ It was also not flush right.
   margin-right:10px;
   margin-top: 0px;
 }
-.left-nav .settings .account {
+.left-nav .settings .dropit .dropit-submenu {
+  bottom: 100%;
+  top: inherit;
+}
+.left-nav .settings .dropit .dropit-trigger { position: relative; }
+.left-nav .settings .account-menu .dropit .dropit-submenu {
   position: absolute;
   top: 100%;
   left: 13px;
@@ -780,13 +785,13 @@ It was also not flush right.
 	padding: 20px;
 	margin-bottom: 20px 0 0;
 }
-.left-nav .settings .account {
+.left-nav .settings .account-menu .dropit .dropit-open .dropit-submenu {
   display: block;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
   border-radius: 4px;
  }
-.left-nav .settings .account {
+.left-nav .settings .account-menu .dropit .dropit-open .dropit-submenu:after{
   content: " ";
   position: absolute;
   border-style: solid;
@@ -797,21 +802,26 @@ It was also not flush right.
   top: -200px;
   right: 13px;
 }
-.left-nav .settings .account li {
+.left-nav .settings .account-menu .dropit .dropit-open .dropit-submenu li {
   position: relative;
   display: block;
 }
-.left-nav .settings .account li:last-child {
+.left-nav .settings .account-menu .dropit .dropit-open .dropit-submenu li:last-child {
+li:last-child {
   margin-bottom: 15px;
 }
-.left-nav .settings .account li a {
+.left-nav .settings .account-menu .dropit .dropit-open .dropit-submenu li a {
   color:#4CAF50;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight:100;
   margin-bottom: 15px
 }
-.settings-icon {
+.left-nav .settings .dropit .dropit-submenu {
+  bottom: 100%;
+  top: inherit;
+}
+.settings-icon .dropit {
 color:#FFFFFF;
 text-decoration: none;
 text-align: right;
