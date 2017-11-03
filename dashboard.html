@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title> Dashboard | Blocbox</title>
+
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Varela+Round" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/dropit.css">
+  </head>
+  <body class="dashboard">
+
+    <!-- RESPONSIVE NAV -->
+    <a class="hamburger" id="menu" href="#">&#9776;</a>
+
+    <!-- LEFT NAV -->
+    <nav id="left-nav" class="left-nav">
+      <a href="#" class="site-logo"><img src="images/blocbox_logo.png" /></a>
+      <div class="items">
+        <p>Items</p>
+        <ul>
+          <li class="active"><a href="dashboard.html"><i class="fa fa-th-large"></i> All Items</a></li>
+          <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
+          <li><a href="images.html"><i class="fa fa-picture-o"></i> Images</a></li>
+          <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
+        </ul>
+        <p>Boxes</p>
+        <ul>
+          <li><a href="#"><i class="fa fa-inbox"></i> Landing Pages</a></li>
+          <li><a href="#"><i class="fa fa-inbox"></i> BB Photos</a></li>
+          <li><a href="#"><i class="fa fa-plus-square-o"></i> Add a new box</a></li>
+        </ul>
+      </div>
+      <div class="settings">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg">
+        <p>Joey Kirk</p>
+        <ul class="account-menu">
+          <li>
+            <ul>
+            <li><a href="#"><i class="fa fa-gear"></i> Account Settings</a></li>
+            <li><a href="#"><i class="fa fa-vcard-o"></i> Upgrade Account</a></li>
+            <li><a href="#"><i class="fa fa-users"></i> Collaborators</a></li>
+            </ul>
+          </li>
+        </ul>
+        <li>
+        <a class="fa fa-cog" id="settings icon" href="#"></a>
+        </li>
+      </div>
+    </nav>
+  <main role="main">
+  <!-- CONTENT -->
+  <section class="content">
+    <div class="container">
+      <div class="header">
+        <h1>All Items</h1>
+        <ul class="add menu">
+          <li>
+            <a href="#" class="btn">+ Add</a>
+            <ul>
+            <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+            <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+            <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content-item">
+        <div class="item-box">
+          <img src="http://images.freeimages.com/images/previews/c93/typo3-written-with-grape-berries-1630928.jpg">
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <h2><img src="https://www.airbnb.com/favicon.ico"><a href="#">airbnb.com</a></h2>
+          <p>World’s largest community driven hospitality company offering homes &amp; experiences</p>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <img src="http://images.freeimages.com/images/small-previews/fe9/people-1633391.jpg">
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <h2><a href="#">Left Navigation</a></h2>
+          <p>We'll use a left navigation to list the different content types: All, Notes, Links, and Images. As the user adds new boxes, a left navigation pattern provides flexibility to list the items vertically without limiting space.</p>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <h2><img src="https://www.invisionapp.com/favicon.ico"><a href="#">invisionapp.com</a></h2>
+          <p>DESIGN BETTER. FASTER. TOGETHER.
+          The world's leading prototyping, collaboration &amp; workflow platform</p>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <img src="https://serpjump.com/wp-content/uploads/2017/08/search-engine-optimization-1636610.jpg">
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <h2><a href="#">Content items</a></h2>
+          <p>The dashboard will display the content that has been added by the user. These items will be displayed in a grid format, featuring four columns. We want to ensure the content is large enough to be legible, but not too large that they over</p>
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg">
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <img src="https://images.pexels.com/photos/7063/man-notebook-notes-macbook.jpg">
+        </div>
+      </div>
+      <div class="content-item">
+        <div class="item-box">
+          <h2><a href="#">Hover interactions</a></h2>
+          <p>Hover interactions can provide a quick way for users to manipulate content items on their Blocbox dashboard. We'll add a simple hover state to display ways to: Favorite, Edit, Delete, and Share. We'll use a left navigation to list the different con</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/dropit.js"></script>
+    <script type="text/javascript">
+      $(".menu").dropit();
+      $( "#menu" ).click(function() {
+        $("#left-nav").toggleClass("open", 200);
+     });
+    </script>
+ </body>
+</html>
