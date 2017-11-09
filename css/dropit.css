@@ -14,29 +14,33 @@
 	margin: 15px 0 0;
   float: right;
   display: inline-block;
+  position: relative;
 }
 .dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+div.header > ul > li > ul.dropit-submenu {
   position: absolute;
   top: 100%;
   right: 0;
-  z-index: 1000;
+  z-index: 1;
   display: none;
   min-width: 100px;
   list-style: none;
 	padding: 20px;
 	margin: 20px 0 0;
 }
-.menu-up .dropit .dropit-submenu {
+div.settings >  ul > li > ul.dropit-submenu {
   position: absolute;
-  bottom: 0;
+  bottom: 100%;
+  bottom: 7px;
   right: 0;
-  z-index: 1000;
+  z-index: 1;
   display: none;
-  min-width: 100px;
+  min-width: 140px;
   list-style: none;
 	padding: 20px;
 	margin: 20px 0 0;
+  font-size: 0.9em;
+  line-height: 2;
 }
 .dropit .dropit-open .dropit-submenu {
   display: block;
@@ -44,7 +48,7 @@
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
   border-radius: 4px;
 }
-.dropit .dropit-open .dropit-submenu:after {
+div.header > ul > li > ul.dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -53,24 +57,24 @@
   display: block;
   width: 0;
   z-index: 1;
-  top: -8px;
+  top:-8px;
   right: 10px;
  }
- .menu-up .dropit .dropit-open .dropit-submenu:after {
+div.settings >  ul > li > ul.dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
-  border-width: 0 8px 8px;
+  border-width: 8px 8px 0;
   border-color: #FFFFFF transparent;
   display: block;
   width: 0;
   z-index: 1;
-  top: 8px;
+  bottom: -8px;
   right: 10px;
  }
 .dropit .dropit-open .dropit-submenu li {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
