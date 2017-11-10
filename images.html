@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title> Images | Blocbox</title>
+    <title> Dashboard | Blocbox</title>
 
     <!--Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Varela+Round" rel="stylesheet">
@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/dropit.css">
   </head>
   <body class="dashboard">
+
+    <!-- RESPONSIVE NAV -->
+    <a class="hamburger" id="menu" href="#">&#9776;</a>
 
     <!-- LEFT NAV -->
     <nav id="left-nav" class="left-nav">
@@ -23,32 +26,52 @@
       <div class="items">
         <p>Items</p>
         <ul>
-          <li><a href="dashboard.html"><i class="fa fa-th-large"></i> All Items</a></li>
-          <li><a href="notes.html"><i class="fa fa-file-o"></i> Notes</a></li>
+          <li><a href="dashboard.html"><i class="fa fa-th"></i> All Items</a></li>
+          <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
           <li class="active"><a href="images.html"><i class="fa fa-picture-o"></i> Images</a></li>
-          <li><a href="links.html"><i class="fa fa-link"></i> Links</a></li>
+          <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
         </ul>
         <p>Boxes</p>
         <ul>
-          <li><a href="#"><i class="fa fa-inbox"></i> Landing Pages</a></li>
-          <li><a href="#"><i class="fa fa-inbox"></i> BB Photos</a></li>
-          <li><a href="#"><i class="fa fa-plus-square-o"></i> Add a new box</a></li>
+          <li><a href="#"><i class="fa fa-th-large"></i> All Boxes</a></li>
+          <li><a href="#"><i class="fa fa-inbox"></i> Design</a></li>
+          <li><a href="#"><i class="fa fa-inbox"></i> Code</a></li>
+          <li><a href="#"><i class="fa fa-inbox"></i> Projects</a></li>
         </ul>
       </div>
       <div class="settings">
         <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg">
         <p>Joey Kirk</p>
-        <a href="#"><i class="fa fa-cog"></i></a>
+        <ul class="account menu menu-up">
+          <li>
+            <a class="fa fa-cog" id="menu-up" href="#"></a>
+            <ul>
+            <li><a href="#"><i class="fa fa-gear"></i> Account Settings</a></li>
+            <li><a href="#"><i class="fa fa-vcard-o"></i> Upgrade Account</a></li>
+            <li><a href="#"><i class="fa fa-users"></i> Collaborators</a></li>
+            </ul>
+          </li>
+        </ul>
+        </li>
       </div>
     </nav>
-   <main role="main">
+  <main role="main">
 
-    <!-- BOXES -->
-    <section class="content">
+  <!-- CONTENT -->
+  <section class="content">
     <div class="container">
       <div class="header">
         <h1>Images</h1>
-        <a href="#" class="btn">+ Add</a>
+        <ul class="add menu">
+          <li>
+            <a href="#" class="btn">+ Add</a>
+            <ul>
+            <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+            <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+            <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="container">
@@ -78,7 +101,15 @@
         </div>
       </div>
     </div>
-    </section>
+  </section>
   </main>
-  </body>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/dropit.js"></script>
+    <script type="text/javascript">
+      $(".menu").dropit();
+      $("#menu").click(function() {
+        $("#left-nav").toggleClass("open", 200);
+    });
+    </script>
+ </body>
 </html>
